@@ -6,7 +6,6 @@ body {
   font-size: 20px;
 }
 
-
 .menu {
   display: flex;
   justify-content: space-between;
@@ -48,6 +47,37 @@ body {
   cursor: pointer;
 }
 
+.circ1 {
+  animation: mover1 3s ease-in-out infinite;
+}
+.circ2 {
+  animation: mover2 4s ease-in-out infinite;
+}
+.circ3 {
+  animation: mover3 5s ease-in-out infinite;
+}
+
+@keyframes mover1 {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes mover2 {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(30px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes mover3 {
+  0% { transform: translateX(0); }
+  25% { transform: translateY(10px); }
+  50% { transform: translateX(-30px); }
+  75% { transform: translateY(-10px); }
+  100% { transform: translateX(0); }
+}
+
+
 .logo_centro {
   margin-top: 20px;
   text-align: center;
@@ -70,24 +100,79 @@ body {
   padding: 150px 150px;
 }
 
-.card {
-  background: #fff;
-  box-shadow: 1px 1px 21px -3px rgba(0,0,0,0.46);
-  -webkit-box-shadow: 1px 1px 21px -3px rgba(0,0,0,0.46);
-  -moz-box-shadow: 1px 1px 21px -3px rgba(0,0,0,0.46);
-  padding: 20px;
-  width: 200px;
-  text-align: center;
-  border-radius: 8px;
+.cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  gap: 40px;
 }
 
- .card span {
+.card-wrapper {
+  position: relative; /* necessário para posicionar as faixas */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 1px 1px 21px -3px rgba(0, 0, 0, 0.46);
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border-radius: 12px;
+  z-index: 1;
+}
+
+.card span {
   font-size: 24px;
   display: block;
   margin-top: 10px;
 }
 
-.sombra {
+.card ,h3{
+  text-align: center;
+  padding: 10px;
+
+}
+
+/* ---------- FAIXAS DECORATIVAS ---------- */
+.faixa {
+  background-color: #d87300;
+  position: absolute;
+  z-index: 0;
+  border-radius: 2px;
+}
+
+.faixa-bottom {
+  width: 225px;
+  height: 20px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 8px;
+}
+
+.faixa-left {
+  width: 20px;
+  height: 225px;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 8px;
+}
+
+.faixa-top {
+  width: 225px;
+  height: 20px;
+  top: -20px;
+  right: 0;
+  border-radius: 8px;
+}
+
+
+/* .sombra {
   border-bottom: 15px solid #d87300;
 }
 
@@ -97,7 +182,7 @@ body {
 
 .sombra2 {
   border-top: 15px solid #d87300;
-}
+} */
 
 footer {
   background: white;

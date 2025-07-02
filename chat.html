@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kineo - Página Inicial</title>
-    <link rel="stylesheet" href="index.css" />
+    <title>Chat — Kineo</title>
+    <link rel="stylesheet" href="chat.css" />
 </head>
 
 <body>
+
     <header>
         <div class="menu">
             <img src="logo.png" alt="Logo" class="logo" />
@@ -38,14 +39,14 @@
                 </span>
 
                 <a href="chat.html">
-                <span class="icon"><svg width="30" height="30" viewBox="0 0 60 60" fill="none"
-                        xmlns="http://www.w3.org/2000/svg" alt="chat">
-                        <path
-                            d="M52.5 28.7501C52.5086 32.0497 51.7377 35.3048 50.25 38.2501C48.4861 41.7794 45.7744 44.748 42.4186 46.8233C39.0629 48.8985 35.1956 49.9985 31.25 50.0001C27.9503 50.0087 24.6953 49.2377 21.75 47.7501L7.5 52.5001L12.25 38.2501C10.7623 35.3048 9.9914 32.0497 10 28.7501C10.0015 24.8045 11.1015 20.9372 13.1768 17.5814C15.2521 14.2257 18.2206 11.514 21.75 9.75007C24.6953 8.2624 27.9503 7.49147 31.25 7.50007H32.5C37.7109 7.78755 42.6326 9.98697 46.3229 13.6772C50.0131 17.3675 52.2125 22.2892 52.5 27.5001V28.7501Z"
-                            stroke="#1E1E1E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </span>
-            </a>
+                    <span class="icon"><svg width="30" height="30" viewBox="0 0 60 60" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" alt="chat">
+                            <path
+                                d="M52.5 28.7501C52.5086 32.0497 51.7377 35.3048 50.25 38.2501C48.4861 41.7794 45.7744 44.748 42.4186 46.8233C39.0629 48.8985 35.1956 49.9985 31.25 50.0001C27.9503 50.0087 24.6953 49.2377 21.75 47.7501L7.5 52.5001L12.25 38.2501C10.7623 35.3048 9.9914 32.0497 10 28.7501C10.0015 24.8045 11.1015 20.9372 13.1768 17.5814C15.2521 14.2257 18.2206 11.514 21.75 9.75007C24.6953 8.2624 27.9503 7.49147 31.25 7.50007H32.5C37.7109 7.78755 42.6326 9.98697 46.3229 13.6772C50.0131 17.3675 52.2125 22.2892 52.5 27.5001V28.7501Z"
+                                stroke="#1E1E1E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </a>
 
                 <span class="icon"><svg width="30" height="30" viewBox="0 0 60 48" fill="none"
                         xmlns="http://www.w3.org/2000/svg" alt="botao">
@@ -60,49 +61,21 @@
 
             </div>
         </div>
-
-        <div class="bolas">
-            <button class="circ circ1">Treine</button>
-            <button class="circ circ2">Conecte</button>
-            <button class="circ circ3">Evolua</button>
-        </div>
-        <div class="logo_centro">Kineo<br><small>Logo</small></div>
     </header>
 
-    <section class="draw">
-        <p>desenho de pessoas fazendo<br>algum esporte em conjunto</p>
-    </section>
+    <div id="message" class="msg"></div>
 
-    <main class="cards">
-        <div class="card-wrapper">
-            <div class="faixa faixa-bottom"></div>
-            <div class="card">
-                <h3>Encontre Parceiros e Comunidades</h3>
-                <span><img src="https://img.icons8.com/?size=100&id=11168&format=png&color=000000" alt="comunidade"
-                        width="40" height="40"></span>
-            </div>
+    <!-- <div id="chat-container">
+        <h2>Chat da Comunidade</h2>
+        <div id="chat-box"></div>
+        <div id="input-box">
+            <input type="text" id="chat-input" placeholder="Digite sua mensagem…" />
+            <button id="send-btn">Enviar</button>
         </div>
+    </div> -->
 
-        <div class="card-wrapper">
-            <div class="faixa faixa-left"></div>
-            <div class="card">
-                <h3>Rankings</h3>
-                <span><img src="https://img.icons8.com/?size=100&id=7649&format=png&color=000000" alt="rank" width="40"
-                        height="40"></span>
-            </div>
-        </div>
-
-        <div class="card-wrapper">
-            <div class="faixa faixa-top"></div>
-            <div class="card">
-                <h3>Chat</h3>
-                <span><img src="https://img.icons8.com/?size=100&id=63&format=png&color=000000" alt="chat" width="40"
-                        height="40"></span>
-            </div>
-        </div>
-    </main>
-
-    <footer>
+    <script src="chat.js"></script>
+   <footer>
         <div class="footer_itens">
             <strong>Kineo</strong><br>
             © 2025 Kineo
@@ -151,5 +124,4 @@
         </div>
     </footer>
 </body>
-
 </html>
