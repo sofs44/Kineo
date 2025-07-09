@@ -97,12 +97,6 @@ body {
 .cards {
   display: flex;
   justify-content: space-around;
-  padding: 150px 150px;
-}
-
-.cards {
-  display: flex;
-  justify-content: space-around;
   padding: 50px 20px;
   gap: 40px;
 }
@@ -136,6 +130,7 @@ body {
   padding: 10px;
 
 }
+
 
 /* ---------- FAIXAS DECORATIVAS ---------- */
 .faixa {
@@ -171,18 +166,6 @@ body {
   border-radius: 8px;
 }
 
-
-/* .sombra {
-  border-bottom: 15px solid #d87300;
-}
-
-.sombra1 {
-  border-left: 15px solid #d87300;
-}
-
-.sombra2 {
-  border-top: 15px solid #d87300;
-} */
 
 footer {
   background: white;
